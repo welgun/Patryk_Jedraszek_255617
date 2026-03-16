@@ -7,7 +7,6 @@ public class DefaultCountingOutRhymer {
     public static final int FULL_RESULT = 11;
 
     public int total = CHECK_RESULT;
-
     public void countIn(int in) {
         if (!isFull())
             NUMBERS[++total] = in;
@@ -26,7 +25,6 @@ public class DefaultCountingOutRhymer {
             return CHECK_RESULT;
         return NUMBERS[total];
     }
-
     public int countOut() {
         if (callCheck())
             return CHECK_RESULT;
